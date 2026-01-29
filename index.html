@@ -309,23 +309,6 @@
         background: var(--light-4);
         transform: translateY(-2px);
       }
-
-      /* Sticky CTA -->
-      .sticky-cta {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: var(--dark);
-        color: white;
-        padding: 15px 0;
-        z-index: 998;
-        transform: translateY(100%);
-        transition: transform 0.3s ease;
-        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
-        display: none; /* Hidden as requested */
-      }
-
       /* Hero Section */
       .hero {
         padding: 140px 0 80px;
@@ -1029,7 +1012,10 @@
       /* Mobile Styles */
       @media (max-width: 768px) {
         .menu-toggle {
-          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--light-3);
         }
 
         .nav {
